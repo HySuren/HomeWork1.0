@@ -1,9 +1,9 @@
 def zeros(n):
-    factorial = 1
-    while n > 1:
-        factorial *= n
-        n -= 1
-    return len(str(factorial)) - len(str(factorial).rstrip('0'))
+    count = 0 
+    while n != 0:
+        count +=n // 5
+        n = n //5
+    return count
 
 
 assert zeros(0) == 0
